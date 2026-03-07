@@ -36,9 +36,11 @@ export function ReservationSection() {
     const body = {
       name: (form.elements.namedItem('name') as HTMLInputElement).value,
       email: (form.elements.namedItem('email') as HTMLInputElement).value,
+      phone: (form.elements.namedItem('phone') as HTMLInputElement).value,
       date: (form.elements.namedItem('date') as HTMLInputElement).value,
       time: (form.elements.namedItem('time') as HTMLInputElement).value,
       guests: (form.elements.namedItem('guests') as HTMLInputElement).value,
+      specialRequest: (form.elements.namedItem('specialRequest') as HTMLTextAreaElement).value,
     }
 
     try {
@@ -96,18 +98,32 @@ export function ReservationSection() {
                 placeholder="Your name"
               />
             </div>
-            <div>
-              <label htmlFor="email" className="block text-sm font-medium text-cream/90 mb-2">
-                Email
-              </label>
-              <input
-                id="email"
-                name="email"
-                type="email"
-                required
-                className="w-full px-4 py-3 bg-cream/10 border border-cream/20 rounded-sm text-white placeholder-cream/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all"
-                placeholder="your@email.com"
-              />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label htmlFor="email" className="block text-sm font-medium text-cream/90 mb-2">
+                  Email
+                </label>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  required
+                  className="w-full px-4 py-3 bg-cream/10 border border-cream/20 rounded-sm text-white placeholder-cream/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all"
+                  placeholder="your@email.com"
+                />
+              </div>
+              <div>
+                <label htmlFor="phone" className="block text-sm font-medium text-cream/90 mb-2">
+                  Phone
+                </label>
+                <input
+                  id="phone"
+                  name="phone"
+                  type="tel"
+                  className="w-full px-4 py-3 bg-cream/10 border border-cream/20 rounded-sm text-white placeholder-cream/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all"
+                  placeholder="(555) 123-4567"
+                />
+              </div>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
               <div>
@@ -149,11 +165,23 @@ export function ReservationSection() {
                 id="guests"
                 name="guests"
                 type="number"
-                min={1}
+                min={2}
                 max={12}
                 required
                 className="w-full px-4 py-3 bg-cream/10 border border-cream/20 rounded-sm text-white placeholder-cream/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all"
                 placeholder="2"
+              />
+            </div>
+            <div>
+              <label htmlFor="specialRequest" className="block text-sm font-medium text-cream/90 mb-2">
+                Special request <span className="text-cream/60 font-normal">(optional)</span>
+              </label>
+              <textarea
+                id="specialRequest"
+                name="specialRequest"
+                rows={3}
+                className="w-full px-4 py-3 bg-cream/10 border border-cream/20 rounded-sm text-white placeholder-cream/50 focus:outline-none focus:ring-2 focus:ring-gold focus:border-transparent transition-all resize-y"
+                placeholder="Dietary needs, allergies, celebration, seating preference…"
               />
             </div>
             {error && (
