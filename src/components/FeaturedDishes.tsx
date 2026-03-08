@@ -6,7 +6,7 @@ export function FeaturedDishes() {
     <section id="dishes" className="py-16 md:py-24 bg-cream">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
-          <p className="font-serif text-gold text-sm tracking-[0.2em] uppercase mb-4">From the Kitchen</p>
+          <p className="font-serif text-gold text-sm tracking-[0.2em] uppercase mb-4">Chef's Special of the month</p>
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal">
             Featured Dishes
           </h2>

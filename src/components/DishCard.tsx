@@ -18,9 +18,9 @@ export function DishCard({ image, name, description, price }: DishCardProps) {
       <div className="p-5 md:p-6">
         <div className="flex items-start justify-between gap-3 mb-2">
           <h3 className="font-serif text-xl font-semibold text-charcoal">{name}</h3>
-          <span className="font-serif text-gold font-medium whitespace-nowrap">{price}</span>
+          <span className="font-serif text-charcoal-light font-medium whitespace-nowrap">{price}</span>
         </div>
-        <p className="text-charcoal/70 text-sm leading-relaxed">{description}</p>
+        <p className="text-charcoal-light text-sm leading-relaxed">{description}</p>
       </div>
     </article>
   )

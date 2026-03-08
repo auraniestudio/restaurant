@@ -27,10 +27,10 @@ export function MenuPreview() {
                   <li key={item.name} className="flex flex-col gap-0.5">
                     <div className="flex justify-between items-start gap-2">
                       <span className="font-medium text-charcoal">{item.name}</span>
-                      <span className="font-serif text-gold text-sm whitespace-nowrap">{item.price}</span>
+                      <span className="font-serif text-charcoal-light text-sm whitespace-nowrap">{item.price}</span>
                     </div>
                     {item.description && (
-                      <span className="text-sm text-charcoal/60">{item.description}</span>
+                      <span className="text-sm text-charcoal-light">{item.description}</span>
                     )}
                   </li>
                 ))}

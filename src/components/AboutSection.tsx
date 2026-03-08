@@ -6,17 +6,17 @@ export function AboutSection() {
           <div className="order-2 lg:order-1">
             <img
               src="/public/about.jpg"
-              alt="Lumière Restaurant interior"
+              alt="Lumière Fine Dining Restaurant in New York City"
               className="w-full aspect-[4/3] object-cover rounded-sm shadow-md"
             />
           </div>
           <div className="order-1 lg:order-2">
-            <p className="font-serif text-gold text-sm tracking-[0.2em] uppercase mb-4">Our Story</p>
+            <p className="font-serif text-gold text-sm tracking-[0.2em] uppercase mb-4">About our restaurant</p>
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-charcoal mb-6">
               Where craft meets elegance
             </h2>
             <p className="text-charcoal/80 leading-relaxed mb-4">
-              Lumière Restaurant has been a beacon of refined dining since our doors opened. We believe in the art of the table - where every dish is thoughtfully composed, every ingredient sourced with care, and every moment designed to linger.
+              Lumière Restaurant has been a beacon of refined dining since our doors opened. We believe in the art of the table, where every dish is thoughtfully composed, every ingredient sourced with care, and every moment designed to linger.
             </p>
             <p className="text-charcoal/80 leading-relaxed">
               Our chef brings decades of experience from kitchens around the world, blending classic technique with seasonal inspiration. Whether you join us for a celebration or a quiet evening, we invite you to experience dining as it was meant to be.
