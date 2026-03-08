@@ -44,25 +44,25 @@ export const menuPreview: MenuCategory[] = [
     items: [
       { name: 'Oysters on the Half Shell', price: '$24' },
       { name: 'Foie Gras Torchon', description: 'Sourdough, fig jam', price: '$32' },
-      { name: 'Crispy Artichokes', description: 'Lemon aioli, herbs', price: '$16' },
-      { name: 'Beet & Goat Cheese', description: 'Walnuts, honey', price: '$18' },
+      { name: 'Crispy Artichokes', description: 'Lemon aioli, herbs', price: '$26' },
+      { name: 'Beet & Goat Cheese', description: 'Walnuts, honey', price: '$37' },
     ],
   },
   {
     title: 'Main Courses',
     items: [
       { name: 'Pan-Roasted Halibut', description: 'Spring vegetables, beurre blanc', price: '$44' },
-      { name: 'Herb-Crusted Lamb Rack', description: 'Mint jus, dauphine potatoes', price: '$52' },
+      { name: 'Herb-Crusted Lamb Rack', description: 'Mint jus, dauphine potatoes', price: '$62' },
       { name: 'Duck Two Ways', description: 'Confit leg, seared breast, cherry reduction', price: '$48' },
-      { name: 'Wild Mushroom Risotto', description: 'Parmesan, truffle oil', price: '$38' },
+      { name: 'Wild Mushroom Risotto', description: 'Parmesan, truffle oil', price: '$42' },
     ],
   },
   {
     title: 'Desserts',
     items: [
-      { name: 'Crème Brûlée', price: '$14' },
-      { name: 'Seasonal Sorbet Trio', price: '$12' },
-      { name: 'Apple Tarte Tatin', description: 'Vanilla ice cream', price: '$16' },
+      { name: 'Crème Brûlée', price: '$24' },
+      { name: 'Seasonal Sorbet Trio', price: '$24' },
+      { name: 'Apple Tarte Tatin', description: 'Vanilla ice cream', price: '$24' },
       { name: 'Cheese Selection', description: 'Three cheeses, accompaniments', price: '$24' },
     ],
   },
