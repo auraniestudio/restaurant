@@ -5,7 +5,7 @@ export function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div className="order-2 lg:order-1">
             <img
-              src="/public/about.jpg"
+              src="/about.jpg"
               alt="Lumière Fine Dining Restaurant in New York City"
               className="w-full aspect-[4/3] object-cover rounded-sm shadow-md"
             />
